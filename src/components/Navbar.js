@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { ThemeContext } from '../context/ThemeContext';
 
 //styles
 import './Navbar.css';
@@ -8,8 +9,10 @@ import './Navbar.css';
 import Searchbar from './Searchbar';
 
 const Navbar = () => {
+  const { color } = useContext(ThemeContext);
+
   return (
-    <div className='navbar'>
+    <div className='navbar' style={{ background: color }}>
       <nav>
         <Link to='/' className='brand'>
           <h1>Grin and Baste It</h1>
