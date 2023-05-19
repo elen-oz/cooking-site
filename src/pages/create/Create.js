@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef } from 'react';
 import { useHistory } from 'react-router-dom';
 import { projectFirestore } from '../../firebase/config';
 
@@ -43,7 +43,12 @@ const Create = () => {
       <form onSubmit={handleSubmit}>
         <label>
           <span>Recipe title:</span>
-          <input type='text' onChange={(e) => setTitle(e.target.value)} value={title} required />
+          <input
+            type='text'
+            onChange={(e) => setTitle(e.target.value)}
+            value={title}
+            required
+          />
         </label>
 
         {/* ingredients go here */}
@@ -56,7 +61,10 @@ const Create = () => {
               value={newIngredient}
               ref={ingredientInput}
             />
-            <button onClick={handleAdd} className='btn'>
+            <button
+              onClick={handleAdd}
+              className='btn'
+            >
               add
             </button>
           </div>
@@ -70,7 +78,11 @@ const Create = () => {
 
         <label>
           <span>Recipe method:</span>
-          <textarea onChange={(e) => setMethod(e.target.value)} value={method} required />
+          <textarea
+            onChange={(e) => setMethod(e.target.value)}
+            value={method}
+            required
+          />
         </label>
 
         <label>

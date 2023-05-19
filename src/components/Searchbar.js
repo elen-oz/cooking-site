@@ -19,7 +19,12 @@ const Searchbar = () => {
     <div className='searchbar'>
       <form onSubmit={handleSubmit}>
         <label htmlFor='search'>
-          <input type='text' id='search' onChange={(e) => setTerm(e.target.value)} required />
+          <input
+            type='text'
+            id='search'
+            onChange={(e) => setTerm(e.target.value)}
+            required
+          />
         </label>
       </form>
     </div>

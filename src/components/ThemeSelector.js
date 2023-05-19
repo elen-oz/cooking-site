@@ -26,7 +26,11 @@ const ThemeSelector = () => {
 
       <div className='theme-buttons'>
         {themeColors.map((color) => (
-          <div key={color} onClick={() => changeColor(color)} style={{ background: color }} />
+          <div
+            key={color}
+            onClick={() => changeColor(color)}
+            style={{ background: color }}
+          />
         ))}
       </div>
     </div>

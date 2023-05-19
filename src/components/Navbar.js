@@ -11,9 +11,15 @@ const Navbar = () => {
   const { color } = useTheme();
 
   return (
-    <div className='navbar' style={{ background: color }}>
+    <div
+      className='navbar'
+      style={{ background: color }}
+    >
       <nav>
-        <Link to='/' className='brand'>
+        <Link
+          to='/'
+          className='brand'
+        >
           <h1>Grin and Baste It</h1>
         </Link>
         <Searchbar />

@@ -21,7 +21,10 @@ function App() {
         <Navbar />
         <ThemeSelector />
         <Switch>
-          <Route exact path='/'>
+          <Route
+            exact
+            path='/'
+          >
             <Home />
           </Route>
           <Route path='/create'>
