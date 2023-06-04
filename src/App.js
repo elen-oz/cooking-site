@@ -1,4 +1,4 @@
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useTheme } from './hooks/useTheme';
 
 // page components
@@ -20,23 +20,24 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <ThemeSelector />
-        <Switch>
+        <Routes>
           <Route
-            exact
             path='/'
-          >
-            <Home />
-          </Route>
-          <Route path='/create'>
-            <Create />
-          </Route>
-          <Route path='/search'>
-            <Search />
-          </Route>
-          <Route path='/recipes/:id'>
-            <Recipe />
-          </Route>
-        </Switch>
+            element={<Home />}
+          />
+          <Route
+            path='/create'
+            element={<Create />}
+          />
+          <Route
+            path='/search'
+            element={<Search />}
+          />
+          <Route
+            path='/recipes/:id'
+            element={<Recipe />}
+          />
+        </Routes>
       </BrowserRouter>
     </div>
   );
