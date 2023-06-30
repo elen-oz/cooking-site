@@ -2,21 +2,22 @@
 
 [Link to the project](https://cooking-ninja-site-e369e.web.app/)
 
-## Available Scripts
+## Project Description
 
-### `npm install`
+Grin and Baste It is a cooking site that provides recipes and cooking tips for food enthusiasts. This project is built with React.js, CSS, and HTML.
 
-Installing all required dependencies.
+## Installation
 
-### `npm start`
+Before you start, make sure you have Node.js and npm installed on your machine.
 
-Runs the app in the development mode.\
-Open [localhost:3000](http://localhost:3000) to view it in the browser.
+1. Clone this repository to your local machine using `https://github.com/elen-oz/cooking-site.git`
+2. Navigate to the project directory: `cd cooking-site`
+3. Install all required dependencies with `npm install`
 
-### `npm run build`
+## Usage
 
-Builds the app for production to the `build` folder.\
+To run the application in development mode, use the command `npm start`. Open your browser and visit `localhost:3000` to view the application.
 
-### `firebase deploy`
+To build the application for production, use the command `npm run build`. This will create a `build` folder with all the necessary files for deployment.
 
-Deploy on Firebase
+To deploy the application on Firebase, use the command `firebase deploy`. Make sure you have Firebase CLI installed and you're logged into Firebase.
