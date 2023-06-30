@@ -6,6 +6,12 @@
 
 Grin and Baste It is a cooking site that provides recipes and cooking tips for food enthusiasts. This project is built with React.js, CSS, and HTML.
 
+## Features
+
+- **Recipe Management**: The application allows users to add and delete recipes, providing a dynamic and interactive cooking guide.
+- **Theme Switching**: The application includes a feature to switch between different color themes, allowing users to customize their user experience.
+- **Firestore Integration**: The application uses Firestore for storing and retrieving data, ensuring a seamless and real-time user experience.
+
 ## Installation
 
 Before you start, make sure you have Node.js and npm installed on your machine.
